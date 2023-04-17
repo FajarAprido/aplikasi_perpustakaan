@@ -11,6 +11,7 @@ class card_id extends Model
     protected $table = 'card_id' ;
 
     protected $filltable = [
-
+        'user_id',
+        'email',
     ];
 }

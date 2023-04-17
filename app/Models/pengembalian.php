@@ -10,4 +10,9 @@ class pengembalian extends Model
     use HasFactory;
 
     protected $table = 'pengembalian';
+
+    protected $filltable = [
+        'user_id',
+        'tanggal_pengembalian',
+    ];
 }

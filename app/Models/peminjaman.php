@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class peminjaman extends Model
 {
     use HasFactory;
+    protected $table = 'peminjaman' ;
+
+    protected $filltable = [
+        'user_id',
+        'tanggal_peminjaman',
+    ];
 }
