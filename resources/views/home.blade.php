@@ -12,9 +12,7 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
 
-    <link href="{{asset('asset/css)
-
-    
+    <link href="{{asset('asset/css/bootstrap.min.css') }}" rel="stylesheet">
 
 
     <!-- Favicons -->
