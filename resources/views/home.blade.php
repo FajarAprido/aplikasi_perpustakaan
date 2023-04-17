@@ -359,7 +359,7 @@
 </footer>
 
 
-    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="{{asset('asset/css/bootstrap.bundel.min.css') }}"></script>
 
       
   </body>
