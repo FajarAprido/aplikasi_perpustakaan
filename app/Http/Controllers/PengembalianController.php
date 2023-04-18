@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class card_id extends Controller
+class PengembalianController extends Controller
 {
     //
 }
