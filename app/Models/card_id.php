@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class card_id extends Model
+class Card_id extends Model
 {
     use HasFactory;
     protected $table = 'card_id' ;
