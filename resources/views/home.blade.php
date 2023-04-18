@@ -12,7 +12,7 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
 
-    <link href="{{asset('resources/asset/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('asset/css/bootstrap.min.css')}}" rel="stylesheet">
 
 
     <!-- Favicons -->
@@ -359,7 +359,7 @@
 </footer>
 
 
-    <script src="{{asset('resources/asset/css/bootstrap.bundel.min.css')}}"></script>
+    <script src="{{asset('asset/css/bootstrap.bundel.min.css')}}"></script>
 
       
   </body>
