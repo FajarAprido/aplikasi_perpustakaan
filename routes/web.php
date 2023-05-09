@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/admin', function(){
+    return view('dashboard_admin');
+});
+
 //Route::controller(UserController::class)->name('user.')->group(function(){
  //   Route::get('/user', 'getUser')->name('getUser');
 //});
