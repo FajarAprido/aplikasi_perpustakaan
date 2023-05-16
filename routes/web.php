@@ -23,4 +23,5 @@ Route::get('/admin', function(){
 
 //Route::controller(UserController::class)->name('user.')->group(function(){
  //   Route::get('/user', 'getUser')->name('getUser');
+ //
 //});
