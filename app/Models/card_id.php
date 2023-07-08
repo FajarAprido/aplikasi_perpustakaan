@@ -13,5 +13,8 @@ class Card_id extends Model
     protected $filltable = [
         'user_id',
         'email',
+        'nama',
+        'alamat',
+        'hp',
     ];
 }
