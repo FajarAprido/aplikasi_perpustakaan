@@ -1,6 +1,6 @@
 @extends('layout.admin')
 @section('judul')
-User ID
+User
 @endsection
 @section('content')
 <section class="section">
