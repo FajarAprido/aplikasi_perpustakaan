@@ -250,7 +250,7 @@
                                 <td scope="col">{{ $user->name }}</td>
                                 <td scope="col">{{ $user->email }}</td>
                                 <td scope="col">{{ $user->password }}</td>
-                                <td>
+                                <!-- <td>
                                     <div>
                                         <a href="{{route('user.editForm',[$user->id])}}" class="btn btn-warning"><i class="fa fa-pencil" aria-hidden="true"></i>Edit</a>
                                         | <form onsubmit="return confirm('Data pengguna akan dihapus ?')" action=" {{route('user.deleteUser',$user->id)}}" method="POST" ">
@@ -259,7 +259,7 @@
                                         <button type=" submit" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i> Hapus</button>
                                         </form>
                                     </div>
-                                </td>
+                                </td> -->
                             </tr>
                             @endforeach
                         </tbody>
