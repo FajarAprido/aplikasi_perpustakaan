@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controller\UserController;
+use App\Http\Controllers\BukuController;
+use App\Http\Controllers\UserController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -15,20 +17,7 @@ use App\Http\Controller\UserController;
 */
 
 Route::get('/', function () {
-    return view('beranda');
+    return view('welcome');
 });
-
-
-
-Route::get('/admin', function(){
-    return view('dashboard_admin');
-});
-
-Route::controller(UserController::class)->name('user.')->group(function () {
-    Route::get('/user', 'index')->name('index');
-    //Route::get('/tambah', 'tambahForm')->name('tambahForm');
-    //Route::get('/edit/{user}', 'editForm')->name('editForm');
-    //Route::post('/simpan', 'saveUser')->name('saveUser');
-    //Route::patch('/update/{user}', 'updateUser')->name('updateUser');
-   //Route::delete('/hapus/{user}', 'deleteUser')->name('deleteUser');
-});
+Route::resource('buku', BukuController::class);
+Route::resource('user', UserController::class);
