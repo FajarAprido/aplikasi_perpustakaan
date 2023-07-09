@@ -1,6 +1,6 @@
 @extends('layout.admin')
 @section('judul')
-Managemen Buku
+Managemen Peminjaman Buku
 @endsection
 @section('content')
 <section class="section">
@@ -15,27 +15,26 @@ Managemen Buku
             <table class="table">
               <thead>
                 <tr>
-                  <th scope="col">No</th>
-                  <th scope="col">Judul</th>
-                  <th scope="col">Pengarang</th>
-                  <th scope="col">Penerbit</th>
-                  <th scope="col">Tahun Terbit</th>
+                  <th scope="col">Card ID</th>
+                  <th scope="col">Nama</th>
+                  <th scope="col">Buku</th>
+                  <th scope="col">Tanggal Peminjaman</th>
                   <th scope="col">Aksi</th>
                 </tr>
               </thead>
               <tbody>
-                @foreach ($dataBuku as $index => $buku)
+                @foreach ($dataPeminjman as $index => $peminjman)
                 <tr>
                   <th scope="row">{{ ++$index }}</th>
-                  <td>{{ $buku->judul }}</td>
-                  <td>{{ $buku->pengarang }}</td>
-                  <td>{{ $buku->penerbit }}</td>
-                  <td>{{ $buku->tahun }}</td>
+                  <td>{{ $peminjman->cardId }}</td>
+                  <td>{{ $peminjman->nama }}</td>
+                  <td>{{ $peminjman->buku }}</td>
+                  <td>{{ $peminjman->tanggalPinjam }}</td>
                   <td>
-                    <a class="dropdown-item" href="{{ route('buku.edit',$buku->id) }}">
+                    <a class="dropdown-item" href="{{ route('peminjman.edit',$peminjman->id) }}">
                         <i class="bx bx-edit-alt me-1"></i> Edit
                     </a >  
-                    <form action="{{ route('buku.destroy',$buku->id) }}" method="POST">
+                    <form action="{{ route('peminjman.destroy',$peminjman->id) }}" method="POST">
                         @csrf
                         @method('DELETE')
                         <button type="submit"> <i class="bx bxs-trash me-1"></i>Delete</button>
