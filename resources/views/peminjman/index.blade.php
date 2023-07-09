@@ -18,6 +18,7 @@ Managemen Peminjaman Buku
                   <th scope="col">Card ID</th>
                   <th scope="col">Nama</th>
                   <th scope="col">Buku</th>
+                  <th scope="col">No Hp</th>
                   <th scope="col">Tanggal Peminjaman</th>
                   <th scope="col">Aksi</th>
                 </tr>
@@ -29,6 +30,7 @@ Managemen Peminjaman Buku
                   <td>{{ $peminjman->cardId }}</td>
                   <td>{{ $peminjman->nama }}</td>
                   <td>{{ $peminjman->buku }}</td>
+                  <td>{{ $peminjman->Nohp }}</td>
                   <td>{{ $peminjman->tanggalPinjam }}</td>
                   <td>
                     <a class="dropdown-item" href="{{ route('peminjman.edit',$peminjman->id) }}">

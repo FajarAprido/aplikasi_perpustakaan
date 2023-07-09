@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\pengembalian;
 use App\Http\Requests\StorepengembalianRequest;
 use App\Http\Requests\UpdatepengembalianRequest;
+use App\Models\Pengembalian as ModelsPengembalian;
 
 class PengembalianController extends Controller
 {
@@ -13,7 +14,8 @@ class PengembalianController extends Controller
      */
     public function index()
     {
-        //
+        $dataPengembalian = pengembalian::all();
+        return view('pengembalian.index', compact('dataPengembalian'));
     }
 
     /**
@@ -21,7 +23,7 @@ class PengembalianController extends Controller
      */
     public function create()
     {
-        //
+        return view('pengembalian.create');
     }
 
     /**
@@ -29,7 +31,8 @@ class PengembalianController extends Controller
      */
     public function store(StorepengembalianRequest $request)
     {
-        //
+        Pengembalian::create($request->all());
+        return redirect()->route('pengembalian.index')->with('success','pengembalian berhasil ditambahkan.');
     }
 
     /**
@@ -45,7 +48,7 @@ class PengembalianController extends Controller
      */
     public function edit(pengembalian $pengembalian)
     {
-        //
+        return view('pengembalian.edit',compact('pengembalian'));
     }
 
     /**
@@ -53,7 +56,8 @@ class PengembalianController extends Controller
      */
     public function update(UpdatepengembalianRequest $request, pengembalian $pengembalian)
     {
-        //
+        $pengembalian->update($request->all());  
+        return redirect()->route('pengembalian.index')->with('success','pengembalian berhasil di edit.');
     }
 
     /**
@@ -61,6 +65,7 @@ class PengembalianController extends Controller
      */
     public function destroy(pengembalian $pengembalian)
     {
-        //
+        $pengembalian->delete();
+        return redirect()->route('pengembalian.index')->with('success','pengembalian berhasil dihapus.');
     }
 }

@@ -12,6 +12,7 @@ class Peminjman extends Model
         'cardId',
         'nama',
         'buku',
+        'noHp',
         'tanggalPinjam', 
     ];
 }
