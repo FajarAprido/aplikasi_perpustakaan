@@ -22,4 +22,4 @@ Route::get('/', function () {
 });
 Route::resource('buku', BukuController::class);
 Route::resource('user', UserController::class);
-Route::resource('user', PeminjmanController::class);
+Route::resource('peminjman', PeminjmanController::class);
