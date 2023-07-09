@@ -13,6 +13,6 @@ class Pengembalian extends Model
         'nama',
         'buku',
         'noHp',
-        'tanggalPinjam', 
+        'tanggalPengembalian', 
     ];
 }
