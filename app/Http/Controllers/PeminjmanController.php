@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\peminjman;
-use App\Http\Requests\StorepeminjmanRequest;
-use App\Http\Requests\UpdatepeminjmanRequest;
+use App\Models\Peminjman;
+use App\Http\Requests\StorePeminjmanRequest;
+use App\Http\Requests\UpdatePeminjmanRequest;
 
 class PeminjmanController extends Controller
 {
