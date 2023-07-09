@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BukuController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PeminjmanController;
-
+use App\Http\Controllers\PengembalianController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,3 +23,4 @@ Route::get('/', function () {
 Route::resource('buku', BukuController::class);
 Route::resource('user', UserController::class);
 Route::resource('peminjman', PeminjmanController::class);
+Route::resource('pengembalian', PengembalianController::class);
