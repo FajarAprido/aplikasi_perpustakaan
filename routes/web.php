@@ -18,7 +18,7 @@ use App\Http\Controllers\PengembalianController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 Route::resource('buku', BukuController::class);
 Route::resource('user', UserController::class);

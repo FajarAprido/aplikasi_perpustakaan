@@ -19,7 +19,6 @@ User
                   <th scope="col">Card ID</th>
                   <th scope="col">Nama</th>
                   <th scope="col">Email</th>
-                  <th scope="col">Password</th>
                   <th scope="col">Nomor Telepon</th>
                   <th scope="col">Aksi</th>
                 </tr>
@@ -30,7 +29,6 @@ User
                   <th scope="row">{{ ++$index }}</th>
                   <td>{{ $user->name }}</td>
                   <td>{{ $user->email }}</td>
-                  <td>{{ $user->password }}</td>
                   <td>{{ $user->nomorHp }}</td>
                   <td>
                     <a class="dropdown-item" href="{{ route('user.edit',$user->id) }}">
