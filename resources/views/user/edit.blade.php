@@ -15,29 +15,29 @@ Tambah User
               @csrf
               @method('PUT')
                 <div class="row mb-3 mt-3">
-                  <label for="inputText" class="col-sm-2 col-form-label">Judul</label>
+                  <label for="inputText" class="col-sm-2 col-form-label">name</label>
                   <div class="col-sm-10">
-                    <input value="{{ $user->judul }}" name="judul" type="text" class="form-control">
+                    <input value="{{ $user->name }}" name="judul" type="text" class="form-control">
                   </div>
                 </div>
                 <div class="row mb-3">
-                  <label for="inputText" class="col-sm-2 col-form-label">Pengarang</label>
+                  <label for="inputText" class="col-sm-2 col-form-label">Email</label>
                   <div class="col-sm-10">
-                    <input value="{{ $user->pengarang }}" name="pengarang" type="text" class="form-control">
+                    <input value="{{ $user->email }}" name="pengarang" type="text" class="form-control">
                   </div>
                 </div>
                 <div class="row mb-3">
-                  <label for="inputText" class="col-sm-2 col-form-label">Penerbit</label>
+                  <label for="inputText" class="col-sm-2 col-form-label">Password</label>
                   <div class="col-sm-10">
-                    <input value="{{ $user->penerbit }}" name="penerbit" type="text" class="form-control">
+                    <input value="{{ $user->password }}" name="penerbit" type="text" class="form-control">
                   </div>
                 </div>
-                <div class="row mb-3">
+                {{-- <div class="row mb-3">
                   <label for="inputText" class="col-sm-2 col-form-label">Tahun Terbit</label>
                   <div class="col-sm-10">
                     <input value="{{ $user->tahun }}" name="tahun" type="text" class="form-control">
                   </div>
-                </div>
+                </div> --}}
 
 
               <div class="row mb-3">
