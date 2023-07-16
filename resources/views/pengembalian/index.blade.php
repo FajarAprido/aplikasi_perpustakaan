@@ -15,7 +15,7 @@ Managemen Pengembalian
             <table class="table">
               <thead>
                 <tr>
-                  <th scope="col">ID</th>
+                  <th scope="col">CARD ID</th>
                   <th scope="col">Nama</th>
                   <th scope="col">Buku</th>
                   <th scope="col">No Hp</th>
