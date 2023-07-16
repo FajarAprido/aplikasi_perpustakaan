@@ -15,7 +15,7 @@ Managemen Peminjaman Buku
             <table class="table">
               <thead>
                 <tr>
-                  <th scope="col">Card ID</th>
+                  <th scope="col">ID</th>
                   <th scope="col">Nama</th>
                   <th scope="col">Buku</th>
                   <th scope="col">No Hp</th>
@@ -27,10 +27,9 @@ Managemen Peminjaman Buku
                 @foreach ($dataPeminjman as $index => $peminjman)
                 <tr>
                   <th scope="row">{{ ++$index }}</th>
-                  <td>{{ $peminjman->cardId }}</td>
                   <td>{{ $peminjman->nama }}</td>
                   <td>{{ $peminjman->buku }}</td>
-                  <td>{{ $peminjman->Nohp }}</td>
+                  <td>{{ $peminjman->NoHp }}</td>
                   <td>{{ $peminjman->tanggalPinjam }}</td>
                   <td>
                     <a class="dropdown-item" href="{{ route('peminjman.edit',$peminjman->id) }}">
