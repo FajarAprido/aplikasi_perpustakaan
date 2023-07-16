@@ -6,6 +6,7 @@ User
 <section class="section">
     <div class="row">
       <div class="col-lg-12">
+        <a  href="{{ route('user.create') }}">Tambah</a>
 
         <div class="card">
           <div class="card-body">
@@ -18,6 +19,7 @@ User
                   <th scope="col">Card ID</th>
                   <th scope="col">Nama</th>
                   <th scope="col">Email</th>
+                  <th scope="col">Password</th>
                   <th scope="col">Nomor Telepon</th>
                   <th scope="col">Aksi</th>
                 </tr>
@@ -26,10 +28,10 @@ User
                 @foreach ($dataUser as $index => $user)
                 <tr>
                   <th scope="row">{{ ++$index }}</th>
-                  <td>{{ $user->cardid }}</td>
-                  <td>{{ $user->nama }}</td>
+                  <td>{{ $user->name }}</td>
                   <td>{{ $user->email }}</td>
-                  <td>{{ $user->nomorhp }}</td>
+                  <td>{{ $user->password }}</td>
+                  <td>{{ $user->nomorHp }}</td>
                   <td>
                     <a class="dropdown-item" href="{{ route('user.edit',$user->id) }}">
                         <i class="bx bx-edit-alt me-1"></i> Edit
