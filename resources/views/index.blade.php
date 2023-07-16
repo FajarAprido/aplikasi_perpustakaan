@@ -19,7 +19,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-light bg-light static-top">
             <div class="container">
-                <a class="navbar-brand" href="#!">PERPUSTAKAAN</a>
+                <a class="navbar-brand" href="#!">PERPUSTAKAAN KAMEK</a>
                 <a class="btn btn-primary" href="#signup">Sign Up</a>
             </div>
         </nav>
