@@ -1,6 +1,6 @@
 @extends('layout.admin')
 @section('judul')
-Managemen Pengembalian
+Data Pengembalian Buku
 @endsection
 @section('content')
 <section class="section">
