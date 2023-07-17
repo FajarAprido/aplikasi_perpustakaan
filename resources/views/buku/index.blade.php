@@ -6,12 +6,11 @@ Managemen Buku
 <section class="section">
     <div class="row">
       <div class="col-lg-12">
-        <a  href="{{ route('buku.create') }}">Tambah</a>
 
 
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Default Table</h5>
+          <a  href="{{ route('buku.create') }}">Tambah</a>
 
             <!-- Default Table -->
             <table class="table">

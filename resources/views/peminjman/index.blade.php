@@ -1,6 +1,6 @@
 @extends('layout.admin')
 @section('judul')
-Managemen Peminjaman Buku
+Data Peminjaman Buku
 @endsection
 @section('content')
 <section class="section">
@@ -9,7 +9,7 @@ Managemen Peminjaman Buku
 
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Default Table</h5>
+          <a  href="{{ route('peminjman.create') }}">Tambah</a>
 
             <!-- Default Table -->
             <table class="table">
