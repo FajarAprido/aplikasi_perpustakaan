@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -11,9 +12,10 @@
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
         <!-- Google fonts-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="tp/css/styles.css" rel="stylesheet" />
+        <link href="tp/css/styles.css" rel="stylesheet">
     </head>
     <body>
         <!-- Navigation-->
@@ -21,52 +23,66 @@
             <div class="container">
                 <a class="navbar-brand" href="#!">PERPUSTAKAAN KITE</a>
                 <a class="btn btn-primary" href="{{route('user.index')}}">Sign Up</a>
-            </div>
+                <style>
+ h1,h2,p,a{
+     font-family: sans-serif;
+     font-weight: normal;
+ }
+
+ .jam-digital-malasngoding {
+     overflow: hidden;
+     width: 100px;
+ }
+ .kotak{
+     float: left;
+     width: 30px;
+     height: 30px;
+     background-color: #189fff;
+ }
+ .jam-digital-malasngoding p {
+     color: #fff;
+     font-size: 12px;
+     text-align: center;
+     margin-top: 6px;
+ }
+
+
+</style>
+
+<div class="jam-digital-malasngoding">
+ <div class="kotak">
+     <p id="jam"></p>
+ </div>
+ <div class="kotak">
+     <p id="menit"></p>
+ </div>
+ <div class="kotak">
+     <p id="detik"></p>
+ </div>
+</div>
+
+<script>
+ window.setTimeout("waktu()", 1000);
+
+ function waktu() {
+     var waktu = new Date();
+     setTimeout("waktu()", 1000);
+     document.getElementById("jam").innerHTML = waktu.getHours();
+     document.getElementById("menit").innerHTML = waktu.getMinutes();
+     document.getElementById("detik").innerHTML = waktu.getSeconds();
+ }
+</script>
         </nav>
         <!-- Masthead-->
         <header class="masthead">
             <div class="container position-relative">
                 <div class="row justify-content-center">
                     <div class="col-xl-6">
-                        <div class="text-center text-white">
+                        <div class="text-center text-black">
                             <!-- Page heading-->
                             <h1 class="mb-5">PERPUSTAKAAN KITE</h1>
-                            <!-- Signup form-->
-                            <!-- * * * * * * * * * * * * * * *-->
-                            <!-- * * SB Forms Contact Form * *-->
-                            <!-- * * * * * * * * * * * * * * *-->
-                            <!-- This form is pre-integrated with SB Forms.-->
-                            <!-- To make this form functional, sign up at-->
-                            <!-- https://startbootstrap.com/solution/contact-forms-->
-                            <!-- to get an API token!-->
-                            <form class="form-subscribe" id="contactForm" data-sb-form-api-token="API_TOKEN">
-                                <!-- Email address input-->
-                                <div class="row">
-                                    <div class="col">
-                                        <input class="form-control form-control-lg" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-                                        <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:required">Email Address is required.</div>
-                                        <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
-                                    </div>
-                                    <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
-                                </div>
-                                <!-- Submit success message-->
-                                <!---->
-                                <!-- This is what your users will see when the form-->
-                                <!-- has successfully submitted-->
-                                <div class="d-none" id="submitSuccessMessage">
-                                    <div class="text-center mb-3">
-                                        <div class="fw-bolder">Form submission successful!</div>
-                                        <p>To activate this form, sign up at</p>
-                                        <a class="text-white" href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                    </div>
-                                </div>
-                                <!-- Submit error message-->
-                                <!---->
-                                <!-- This is what your users will see when there is-->
-                                <!-- an error submitting the form-->
-                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            </form>
-                        </div>
+                            <p>Jadikan Membaca Adalah Nomor 1 Dihidupmu</p>
+  
                     </div>
                 </div>
             </div>
@@ -78,22 +94,22 @@
                     <div class="col-lg-4">
                         <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                             <div class="features-icons-icon d-flex"><i class="bi-window m-auto text-primary"></i></div>
-                            <h3>Fully Responsive</h3>
-                            <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
+                            <h3>Fajar</h3>
+                            <p class="lead mb-0">Ketua Kelompok</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                             <div class="features-icons-icon d-flex"><i class="bi-layers m-auto text-primary"></i></div>
-                            <h3>Bootstrap 5 Ready</h3>
-                            <p class="lead mb-0">Featuring the latest build of the new Bootstrap 5 framework!</p>
+                            <h3>Kumara</h3>
+                            <p class="lead mb-0">Anggota</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="features-icons-item mx-auto mb-0 mb-lg-3">
                             <div class="features-icons-icon d-flex"><i class="bi-terminal m-auto text-primary"></i></div>
-                            <h3>Easy to Use</h3>
-                            <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
+                            <h3>syaiful</h3>
+                            <p class="lead mb-0">Anggota</p>
                         </div>
                     </div>
                 </div>
@@ -135,6 +151,21 @@
                     </div>
                 </div>
             </div>
+   
+<p></p>
+  <hr class="featurette-divider">
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2023 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+
+
+    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+      
+  </body>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
