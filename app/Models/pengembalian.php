@@ -12,7 +12,7 @@ class Pengembalian extends Model
         'cardId',
         'nama',
         'buku',
-        'noHp',
-        'tanggalPengembalian', 
+        'NoHp',
+        'tanggalPengmbalian',
     ];
 }
