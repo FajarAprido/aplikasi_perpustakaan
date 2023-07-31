@@ -11,30 +11,30 @@ Tambah Buku
           <div class="card-body">
 
             <!-- General Form Elements -->
-            <form action="{{ route('buku.store') }}" method="POST">
+            <form action="{{ route('peminjman.store') }}" method="POST">
                 @csrf
                 <div class="row mb-3 mt-3">
-                  <label for="inputText" class="col-sm-2 col-form-label">Judul</label>
+                  <label for="inputText" class="col-sm-2 col-form-label">Nama</label>
                   <div class="col-sm-10">
-                    <input name="judul" type="text" class="form-control">
+                    <input name="nama" type="text" class="form-control">
                   </div>
                 </div>
                 <div class="row mb-3">
-                  <label for="inputText" class="col-sm-2 col-form-label">Pengarang</label>
+                  <label for="inputText" class="col-sm-2 col-form-label">Buku</label>
                   <div class="col-sm-10">
-                    <input name="pengarang" type="text" class="form-control">
+                    <input name="buku" type="text" class="form-control">
                   </div>
                 </div>
                 <div class="row mb-3">
-                  <label for="inputText" class="col-sm-2 col-form-label">Penerbit</label>
+                  <label for="inputText" class="col-sm-2 col-form-label">No. HP</label>
                   <div class="col-sm-10">
-                    <input name="penerbit" type="text" class="form-control">
+                    <input name="NoHp" type="text" class="form-control">
                   </div>
                 </div>
                 <div class="row mb-3">
-                  <label for="inputText" class="col-sm-2 col-form-label">Tahun Terbit</label>
+                  <label for="inputText" class="col-sm-2 col-form-label">Tanggal Peminjaman</label>
                   <div class="col-sm-10">
-                    <input name="tahun" type="text" class="form-control">
+                    <input name="tanggalPinjam" type="text" class="form-control">
                   </div>
                 </div>
 
